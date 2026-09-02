@@ -1,0 +1,20 @@
+@host = http://localhost:5188
+
+GET {{host}}/api/movies
+Accept: application/json
+
+###
+
+GET {{host}}/api/movies?year=1994
+Accept: application/json
+
+###
+
+POST {{host}}/api/movies
+Content-Type: application/json
+
+{
+  "name": "Arrival",
+  "genre": "Science Fiction",
+  "year": 2016
+}
